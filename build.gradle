@@ -10,11 +10,16 @@ sourceCompatibility = 1.8
 repositories {
     mavenCentral()
     jcenter()
+    maven {
+        url  "https://dl.bintray.com/patriques82/maven"
+    }
 
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile 'net.dv8tion:JDA:4.1.1_110'
+    compile 'org.patriques:alphavantage4j:1.4'
+
 
 }
